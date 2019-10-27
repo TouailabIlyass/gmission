@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/center_background"
+    android:paddingBottom="70dp"
+    tools:context=".StockActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4"
+        >
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/bank"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consulter Stock"
+            android:textColor="#DDD"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/back_withe_raduis"
+        android:paddingBottom="90dp"
+        >
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_stock_vtt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stock VTT"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/back_blue_raduis"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_stock_vta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stock VTA"
+        android:textStyle="bold"
+        android:background="@drawable/back_blue_raduis_ops"
+        />
+    </LinearLayout>
+</LinearLayout>

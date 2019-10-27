@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AdminActivity">
+
+    <EditText
+        android:id="@+id/txt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:layout_alignParentTop="true"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/txt_search"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_viewAllemployes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </ScrollView>
+    <Button
+        android:id="@+id/btn_gStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stock"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/back_blue_raduis_ops"
+        android:layout_above="@id/btn_addEmploye"
+        android:layout_marginBottom="5dp"
+        />
+    <Button
+        android:id="@+id/btn_addEmploye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter Employe"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/back_blue_raduis_ops"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        />
+</RelativeLayout>
