@@ -82,7 +82,16 @@
         android:textColorHint="#0D93C2"
         android:textStyle="bold"
         />
-
+        <TextView
+            android:id="@+id/lbl_accompagne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accompagne"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_below="@id/txt_destination"
+            android:layout_marginTop="5dp"
+            />
     <Spinner
         android:id="@+id/spinner_employe"
         android:layout_width="match_parent"
@@ -93,11 +102,16 @@
     <TextView
         android:id="@+id/lbl_empsaccaompagne"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#05911b"
+        />
     <TextView
         android:id="@+id/lbl_empscinaccaompagne"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">

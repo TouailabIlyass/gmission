@@ -3,6 +3,7 @@ package com.exemple.www.gmission;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -70,6 +71,7 @@ public class AdminActivity extends AppCompatActivity implements EmployeAdapter.O
 
         Button addemploye = findViewById(R.id.btn_addEmploye);
         Button gstock = findViewById(R.id.btn_gStock);
+        Button state = findViewById(R.id.btn_state);
         final EditText search = findViewById(R.id.txt_search);
 
         mRecyclerView = findViewById(R.id.recycle_viewAllemployes);
@@ -120,6 +122,17 @@ public class AdminActivity extends AppCompatActivity implements EmployeAdapter.O
             startService(mServiceIntent);
         }
         ////////////////////////
+        state.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri gmmIntentUri = Uri.parse(Res.URL+"/chart.php");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                //mapIntent.setPackage("com.google.android.apps.maps");
+               // mapIntent.setPackage("com.android.chrome");
+                startActivity(mapIntent);
+            }
+        });
+        //////////////////
     }
 
     public void jsonArrayParse(String search) {

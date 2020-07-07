@@ -5,26 +5,40 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     card_view:cardBackgroundColor="@color/white">
 
-<LinearLayout
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="@drawable/back_blue_raduis_ops"
     >
+    <TextView
+        android:id="@+id/lbl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Numbon : "
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@id/txtNumbon"
+        />
     <TextView
         android:id="@+id/txtNumbon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginLeft="8dp"
-
-
+        android:text="Numbon"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
         />
+
+
     <TextView
         android:id="@+id/txtMarque"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginLeft="8dp"
         android:visibility="gone"/>
     <TextView
         android:id="@+id/txtDistance"
@@ -34,13 +48,30 @@
         android:layout_marginLeft="8dp"
         android:visibility="gone"
         />
+    <TextView
+        android:id="@+id/lbl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Destibation : "
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@id/txtNumbon"
+        android:layout_below="@id/txtNumbon"
+        />
         <TextView
             android:id="@+id/txtDestination"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/txtNumbon"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/lbl2"
+            android:text="dddd"
             />
-</LinearLayout>
+</RelativeLayout>
 
 </android.support.v7.widget.CardView>

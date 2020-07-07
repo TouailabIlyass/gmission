@@ -91,11 +91,16 @@
     <TextView
         android:id="@+id/lbl_empsaccaompagne"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#05911b"
+        />
     <TextView
         android:id="@+id/lbl_empscinaccaompagne"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
 
         <RelativeLayout
             android:layout_width="match_parent"

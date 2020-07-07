@@ -33,7 +33,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight=".8"
+        android:layout_weight=".9"
         android:orientation="vertical"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
@@ -106,33 +106,41 @@
         android:textStyle="bold"
         android:layout_below="@id/btn_date"
         />
-
+        <TextView
+            android:id="@+id/lbl_accompagne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accompagne"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_below="@id/txt_destination"
+            android:layout_marginTop="5dp"
+            />
     <Spinner
         android:id="@+id/spinner_employe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:spinnerMode="dropdown"
-        android:layout_below="@id/txt_destination"
-        android:padding="10dp"
+        android:layout_below="@id/lbl_accompagne"
         android:layout_marginBottom="5dp"
         >
     </Spinner>
+
     <TextView
         android:id="@+id/lbl_empsaccaompagne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="invisible"/>
+        android:layout_below="@id/spinner_employe"
+        android:textStyle="bold"
+        android:textColor="#05911b"
+        />
     <TextView
         android:id="@+id/lbl_empscinaccaompagne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="invisible"
         />
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/spinner_employe"
-            >
+
         <Button
             android:id="@+id/btn_valide"
             android:layout_width="wrap_content"
@@ -142,7 +150,9 @@
             android:textStyle="bold"
             android:background="@drawable/back_blue_raduis"
             android:layout_alignParentRight="true"
+
+            android:layout_below="@id/lbl_empsaccaompagne"
             />
-        </RelativeLayout>
+
     </RelativeLayout>
 </LinearLayout>

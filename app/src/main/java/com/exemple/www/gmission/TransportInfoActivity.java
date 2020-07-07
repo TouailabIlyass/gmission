@@ -63,7 +63,7 @@ public class TransportInfoActivity extends AppCompatActivity {
                                 JSONObject obj = response.getJSONObject(i);
                                 //list.add(new Mission(obj.getInt("id"),obj.getString("type"),obj.getString("date"),obj.getString("cin_emp")));
                                 transport = new Transport(obj.getInt("id"),obj.getString("transport"),obj.getInt("type"),obj.getString("cin_emp"));
-                                Toast.makeText(getApplicationContext(),"start: "+transport.getType(),Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(getApplicationContext(),"start: "+transport.getType(),Toast.LENGTH_SHORT).show();
 
                                 if(transport.getType()==1)
                                 {   JSONObject jsavion =  obj.getJSONObject("avion");

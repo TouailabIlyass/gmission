@@ -131,7 +131,7 @@ public class LoginActivity extends AppCompatActivity {
         protected void onPostExecute(String s) {
             if (this.isSuccess) {
                 finish();
-                Toast.makeText(LoginActivity.this.getBaseContext(), "fin", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(LoginActivity.this.getBaseContext(), "fin", Toast.LENGTH_SHORT).show();
             }
             LoginActivity.this.progressDialog.hide();
         }

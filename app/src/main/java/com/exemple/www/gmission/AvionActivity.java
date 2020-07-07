@@ -159,10 +159,13 @@ public class AvionActivity extends AppCompatActivity implements DatePickerDialog
                                    View view, int pos, long id) {
             // Toast.makeText(parent.getContext(), "Item is " +parent.getItemAtPosition(pos)., Toast.LENGTH_LONG).show();
             Employe emp= (Employe) parent.getItemAtPosition(pos);
-            Toast.makeText(parent.getContext(), "Item is " +emp.getCin(), Toast.LENGTH_LONG).show();
+            Toast.makeText(parent.getContext(), "Item is "+id +emp.getCin(), Toast.LENGTH_LONG).show();
             if(!listemp.getText().toString().contains(emp.getNom()+" "+emp.getPrenom()))
             {
-                listemp.setText(listemp.getText().toString()+emp.getNom()+" "+emp.getPrenom()+", ");
+                if(listemp.getText().toString().isEmpty())
+                    listemp.setText(listemp.getText().toString()+emp.getNom()+" "+emp.getPrenom());
+                else
+                    listemp.setText(listemp.getText().toString()+", "+emp.getNom()+" "+emp.getPrenom());
                 listempcin.setText(listempcin.getText().toString()+emp.getCin()+",");
             }
         }

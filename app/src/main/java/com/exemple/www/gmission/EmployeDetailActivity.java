@@ -105,7 +105,7 @@ public class EmployeDetailActivity extends AppCompatActivity {
                               Uri gmmIntentUri = Uri.parse("https://www.google.com/maps/@"+location[0]+","+location[1]);
                               Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                              //mapIntent.setPackage("com.google.android.apps.maps");
-                            mapIntent.setPackage("com.android.chrome");
+                            //mapIntent.setPackage("com.android.chrome");
                             startActivity(mapIntent);
 
                         }catch (Exception e)

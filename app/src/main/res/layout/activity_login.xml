@@ -34,7 +34,7 @@
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="20dp"
         android:layout_below="@id/loginstatus"
-        android:text="aa"
+        android:text="admin"
         />
     <EditText
         android:id="@+id/passLogintxt"
@@ -64,6 +64,7 @@
         />
     <Button
         android:id="@+id/sinscrirebtn"
+        android:visibility="invisible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="S'inscrire"

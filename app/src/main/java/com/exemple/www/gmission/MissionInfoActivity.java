@@ -55,7 +55,7 @@ public class MissionInfoActivity extends AppCompatActivity {
                             for (int i = 0; i < response.length(); i++) {
                                 JSONObject obj = response.getJSONObject(i);
                                 list.add(new Mission(obj.getInt("id"),obj.getString("type"),obj.getString("date"),obj.getString("cin_emp")));
-                                Toast.makeText(getApplicationContext(),"fff",Toast.LENGTH_LONG).show();
+                               //Toast.makeText(getApplicationContext(),"fff",Toast.LENGTH_LONG).show();
                             }
                             missionAdapter = new MissionAdapter(getApplicationContext(),list);
                            // missionAdapter.setOnItemClickListener(AdminActivity.this);

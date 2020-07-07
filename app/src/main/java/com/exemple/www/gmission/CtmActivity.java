@@ -138,7 +138,10 @@ public class CtmActivity extends AppCompatActivity {
             Toast.makeText(parent.getContext(), "Item is " +emp.getCin(), Toast.LENGTH_LONG).show();
             if(!listemp.getText().toString().contains(emp.getNom()+" "+emp.getPrenom()))
             {
-                listemp.setText(listemp.getText().toString()+emp.getNom()+" "+emp.getPrenom()+", ");
+                if(listemp.getText().toString().isEmpty())
+                    listemp.setText(listemp.getText().toString()+emp.getNom()+" "+emp.getPrenom());
+                else
+                    listemp.setText(listemp.getText().toString()+", "+emp.getNom()+" "+emp.getPrenom());
                 listempcin.setText(listempcin.getText().toString()+emp.getCin()+",");
             }
         }
